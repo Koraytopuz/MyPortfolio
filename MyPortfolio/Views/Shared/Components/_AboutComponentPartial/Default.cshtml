@@ -1,8 +1,24 @@
-﻿<section id="about" class="s-about target-section">
+﻿<style>
+    body {
+        /* Arka plan resmini tanımlama */
+        background-image: url('https://resmim.net/cdn/2024/07/30/W1y4HM.webp');
+        background-size: cover; /* Resmi tam olarak kaplamasını sağlar */
+        background-position: center; /* Resmin ortalanmasını sağlar */
+        background-repeat: no-repeat; /* Resmin tekrarını engeller */
+        background-attachment: fixed; /* Resmin kaydırıldığında sabit kalmasını sağlar */
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+</style>
+
+<section id="about" class="s-about target-section">
+
 
     <div class="row narrow section-intro has-bottom-sep">
         <div class="col-full text-center">
             <h3>Hakkımda</h3>
+            <h4>Kişisel gelişimime önem veren biriyim, sorumluluklarım söz konusu olduğunda çalışkan bir insanım. İletişim benim için en önemli durumlardan bir tanesi, insanların sorunlarını dinlemekten, onlardan tavsiye almaktan keyif alırım. Açık fikirli bir bireyim. Özellikle Yapay Zeka ve Web Teknolojilerini keşfetmekle,öğrenmekle ilgileniyorum.</h4>
             <h1>@ViewBag.aboutTitle</h1>
             <p class="lead">@ViewBag.aboutSubDescription</p>
         </div>
@@ -10,13 +26,6 @@
 
     <div class="row about-content">
 
-        <div class="col-six tab-full left">
-            <h3>Ben Kimim</h3>
-
-            <p>
-                @ViewBag.aboutDetail
-            </p>
-        </div>
         @await Component.InvokeAsync("_SkillComponentPartial")
 
     </div> <!-- end about-content -->
@@ -24,10 +33,12 @@
     <div class="row about-content about-content--buttons">
 
         <div class="col-six tab-full left">
-            <a href="#0" class="btn btn--primary full-width">CV'mi İndir</a>
+            <a href="@Url.Content("https://drive.google.com/file/d/1hxPJSzf_eNsLQT45mIYxw91aMbRd3F6T/view?usp=sharing")" class="btn btn--primary full-width">CV'mi Görüntüle</a>
         </div>
         <div class="col-six tab-full right">
-            <a href="#0" class="btn full-width">Bana Ulaşın</a>
+            <a href="https://wa.me/+905530552740?text=Merhaba,%20size%20nasil%20yardimci%20olabilirim?" class="btn full-width" target="_blank">
+                WhatsApp ile Bana Ulaşın
+            </a>
         </div>
 
     </div> <!-- end about-content buttons -->
