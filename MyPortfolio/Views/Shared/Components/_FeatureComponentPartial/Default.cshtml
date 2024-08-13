@@ -1,8 +1,7 @@
 ﻿@model List<MyPortfolio.DAL.Entities.Feature>
-<section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="https://resmim.net/cdn/2024/07/30/W1y4HM.webp" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+<section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="https://e0.pxfuel.com/wallpapers/458/944/desktop-wallpaper-white-background-simple-white.jpg" data-natural-width=1440 data-natural-height=3122 data-position-y=center>
 
     <div class="overlay"></div>
-    <div class="shadow-overlay"></div>
     @foreach(var item in Model)
     {
         <div class="home-content">
@@ -39,13 +38,15 @@
 
     <ul class="home-social">
         <li>
-            <a href="#https://www.linkedin.com/in/koray-topuz-3a179a227/" target="_blank"><i class="im im-linkedin" aria-hidden="true"></i><span>Linkedin</span></a>
+            <a href="@Url.Content("https://www.linkedin.com/in/koray-topuz-3a179a227/")" target="_blank"><i class="im im-linkedin" aria-hidden="true"></i><span>Linkedin</span></a>
         </li>
         <li>
-            <a href="#https://x.com/Krytopuz " target="_blank"><i class="im im-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+            <a href="@Url.Content("https://x.com/Krytopuz")" target="_blank"><i class="im im-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
         </li>
         <li>
-            <a href="#https://github.com/Koraytopuz" target="_blank"><i class="im im-github" aria-hidden="true"></i><span>Github</span></a>
+            <a href="@Url.Content("https://github.com/Koraytopuz")" target="_blank"><i class="im im-github" aria-hidden="true"></i><span>Github</span></a>
+        </li>       <li>
+            <a href="@Url.Content("https://instagram.com/Krytopuz")" target="_blank"><i class="im im-instagram" aria-hidden="true"></i><span>İnstagram</span></a>
         </li>
 
     </ul>
