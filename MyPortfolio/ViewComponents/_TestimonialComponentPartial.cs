@@ -4,9 +4,9 @@ namespace MyPortfolio.ViewComponents
 {
     public class _TestimonialComponentPartial : ViewComponent
     {
-        public IViewComponentResult Invoke() 
+        public IViewComponentResult Invoke()
         {
-            return View(); 
+            return View();
         }
     }
 }
