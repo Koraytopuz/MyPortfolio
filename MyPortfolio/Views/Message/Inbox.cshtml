@@ -19,18 +19,46 @@
 							</div>
 							<table class="table mt-3">
 								<thead>
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">Gönderen</th>
-										<th scope="col">Konu</th>
-										<th scope="col">Tarih</th>
-										<th scope="col">Mesajı Aç</th>
-										<th scope="col">Durum</th>
-										<th scope="col">Sil</th>
-									</tr>
-								</thead>
+									</thead>
 								<tbody>
-									@foreach(var item in Model)
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Mesaj ID</th>
+											<th>Gönderen</th>
+											<th>Konu</th>
+											<th>Gönderim Tarihi</th>
+											<th>Detay</th>
+											<th>Okunma Durumu</th>
+											<th>Sil</th>
+										</tr>
+									</thead>
+									<tbody>
+										@foreach (var item in Model)
+										{
+											<tr>
+												<td>@item.MessageId</td>
+												<td>@item.NameSurname</td>
+												<td>@item.Subject</td>
+												<td>@item.SendDate.ToShortDateString()</td>
+												<td><a href="/Message/MessageDetail/@item.MessageId" class="btn btn-warning">Mesajı Aç</a></td>
+												<td>
+													@if (item.IsRead)
+													{
+														<a href="/Message/ChangeIsReadToFalse/@item.MessageId" class="btn btn-dark">Okunmadı Olarak İşaretle</a>
+													}
+													else
+													{
+														<a href="/Message/ChangeIsReadToTrue/@item.MessageId" class="btn btn-info">Okundu Olarak İşaretle</a>
+													}
+												</td>
+												<td><a href="/Message/DeleteMessage/@item.MessageId" class="btn btn-danger">Sil</a></td>
+											</tr>
+										}
+									</tbody>
+								</table>
+
+@* 									@foreach(var item in Model)
 									{
 										<tr>
 											<td>@item.MessageId</td>
@@ -44,14 +72,13 @@
 
 										}
 										else{
-											<td><a href="/Message/ChangeIsReadToTrue/@item.MessageId" class="btn btn-info">Okundu Olarak İşaretle.</a></td>
-										}
-
-											
+											<td><a href="/Message/ChangeIsReadToTrue/@item.MessageId" class="btn btn-info">Okundu Olarak İşaretle.</a>
+												</td>
 										}
 										<td><a href="/Message/DeleteMessage/@item.MessageId" class ="btn btn-danger">Sil</a></td>
 										</tr>
 									}
+ *@									
 								</tbody>
 							</table>
 						</div>

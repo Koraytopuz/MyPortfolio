@@ -1,4 +1,4 @@
-﻿@model List<MyPortfolio.DAL.Entities.Skill>
+﻿@* @* @model List<MyPortfolio.DAL.Entities.Skill>
 <div class="col-six tab-full right">
     <h3>Programlama Dilleri & Teknolojiler.</h3>
     <ul class="skill-bars">
@@ -27,5 +27,21 @@
                                 <div class="progress percent60"><span>60%</span></div>
                                 <strong>JAVA</strong>
                             </li>
+    </ul>
+</div>
+  *@
+ @model List<MyPortfolio.DAL.Entities.Skill>
+<div class="col-six tab-full right">
+    <h3>Yeteneklerim</h3>
+    <ul class="skill-bars">
+        @foreach (var item in Model)
+        {
+            <li>
+                <div class="progress" style="width:@item.Value%">
+                    <span>@item.Value%</span>
+                </div>
+                <strong>@item.Title</strong>
+            </li>
+        }
     </ul>
 </div>
