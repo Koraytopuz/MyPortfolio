@@ -39,6 +39,10 @@ yeteneklerim, sosyal medya hesaplarım ve iletişim bilgilerim görünmektedir. 
 ![image](https://github.com/user-attachments/assets/3796da54-27ff-4afc-a196-63878d1c98e5)</br>
 ![image](https://github.com/user-attachments/assets/3ef66137-90f7-4171-836c-b422ad9ade04)</br>
 ![image](https://github.com/user-attachments/assets/b2b6ccca-d3ba-4a1f-80b3-669c975e6991)</br>
+![image](https://github.com/user-attachments/assets/b73618d3-c35f-4e6e-b318-d97adc8252e0)</br>
+![image](https://github.com/user-attachments/assets/d3a28d3b-3fd0-43c9-8614-92a5248c5bf9)
+
+
 
 
 
