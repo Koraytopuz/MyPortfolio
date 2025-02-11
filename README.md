@@ -8,10 +8,10 @@ yeteneklerim, sosyal medya hesaplarım ve iletişim bilgilerim görünmektedir. 
 ## KULLANILAN TEKNOLOJİLER VE KÜTÜPHHANELER;
 
 - ASP.NET Core (6.0) <br />
-- Microsoft.Entity.FrameworkCore (6.0.28) <br />
-- Microsoft.Entity.FrameworkCore.Design (6.0.28) <br />
-- Microsoft.Entity.FrameworkCore.SqlServer (6.0.28) <br />
-- Microsoft.Entity.FrameworkCore.Tools (6.0.28) <br />
+- Microsoft.Entity.FrameworkCore <br />
+- Microsoft.Entity.FrameworkCore.Design <br />
+- Microsoft.Entity.FrameworkCore.SqlServer <br />
+- Microsoft.Entity.FrameworkCore.Tools <br />
 - Layout Kontrolü <br />
 - Controller Yapısı <br />
 - View Components ile Partial View Kullanımı <br />
